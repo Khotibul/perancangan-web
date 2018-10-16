@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<title>Pendaftaran Santri baru</title>
+<head>
+	<link rel="shortcut icon" href="Gambar/MHI.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+	<div style="background-color:#6a7583; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; font-size:14px;">
+		<nav class="navbar navbar-custom" style="background-color:#1b4880">
+			<div class="container">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="../Home.html"><span class="glyphicon glyphicon-chevron-left"></span> kembali</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="panel">
+				<div class="panel-body">
+					<center><h2>Pendaftaran Santri Baru</h2></center>
+					<br><br>
+
+					<form class="form-horizontal">
+						<div class="form-group">
+							<div class="col-sm-1" >
+							</div>
+
+							<label class="control-label col-sm-3" for="username">Username</label>
+							<div class="col-sm-4" data-role="input-control" >
+								<input type="text" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Input Hanya Boleh Huruf dan Tanpa Spasi!')" oninput="setCustomValidity('')" class="form-control" name="username" id="username" placeholder="Username" rel="tooltip" title="Username digunakan untuk Login" data-placement="right" required autofocus  />
+							</div>
+							<div id="pesan">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-1"></div>
+							<label class="control-label col-sm-3" for="nama">Nama Lengkap</label>
+							<div class="col-sm-4" data-role="input-control">
+								<input type="text" class="form-control" name="nama" id="nama" placeholder="Masukkan Nama Lengkap Anda" rel="tooltip" title="Isikan nama lengkap anda" data-placement="right" required="required">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-sm-1"></div>
+							<label class="control-label col-sm-3" for="email">Alamat</label>
+							<div class="col-sm-4" data-role="input-control">
+								<input type="email" class="form-control" name="email" id="email" placeholder="Masukkan Email Anda" rel="tooltip" title="Email digunakan untuk Lupa Password" data-placement="right" required="required">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-sm-1"></div>
+							<label class="control-label col-sm-3" for="email">Nama Wali</label>
+							<div class="col-sm-4" data-role="input-control">
+								<input type="email" class="form-control" name="email" id="email" placeholder="Masukkan Email Anda" rel="tooltip" title="Email digunakan untuk Lupa Password" data-placement="right" required="required">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-sm-1"></div>
+							<label class="control-label col-sm-3" for="hp">No Handphone</label>
+							<div class="col-sm-4" data-role="input-control">
+								<input type="text" maxlength="13" pattern="[0-9]+.{10,13}" oninvalid="setCustomValidity('Input Hanya Boleh Angka!')" oninput="setCustomValidity('')" class="form-control" name="no_hp" id="hp" placeholder="No Handphone" rel="tooltip" title="No Handphone Anda" data-placement="right" required="required" >
+							</div>
+						</div>
+
+
+						<div class="form-group">
+							<div class="col-sm-1"></div>
+							<label class="control-label col-sm-3" for="password">Password</label>
+							<div class="col-sm-4">
+								<input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" oninvalid="setCustomValidity('Minimal 1 Huruf Kapital,1 Huruf Kecil dan 1 Angka!')" oninput="setCustomValidity('')" class="form-control" name="password" id="password" placeholder="Password" required="required">
+							</div>
+
+						</div>
+
+						<div class="form-group">
+							<div class="col-sm-1"></div>
+							<label class="control-label col-sm-3" for="konfirmasi_password">Konfirmasi Password</label>
+							<div class="col-sm-4">
+								<input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"  class="form-control" name="konfirmasi_password" id="konfirmasi_password" placeholder="Konfirmasi Password" required="required">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-sm-1"></div>
+							<label class="control-label col-sm-3" for="nilaiCaptcha">Masukkan Kode Captcha</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" name="nilaiCaptcha" id="nilaiCaptcha" placeholder="Masukkan Kode Captcha" required="required" maxlength="5"><br>
+								<input type="checkbox" name="cek" required>Saya telah membaca Syarat & Ketentuan Pemesanan
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+							</div>
+							<div class="col-sm-3">
+								<button type="submit" class="btn btn-danger" name="Register">Daftar</button>
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
